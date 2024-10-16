@@ -1,33 +1,18 @@
-import java.util.Scanner;
+class Text1 {
 
-public class Text1 {
-    public static String gioiTinh(boolean gt) {
-        return null;
+    public static void main(String[] args) {
+  
+        int arrc[][][] = {{{5,2,3},{4,5,6,8},{7,7}},{{5,6,7,3},{8,9}}};
+
+        System.out.println("Bien C gom: ");
+        for (int i=0;i<arrc.length;i++)
+            for (int j=0;j<arrc[i].length;j++)
+                for (int k=0;k<arrc[i][j].length; k++)
+        {
+            System.out.println(arrc[i][j][k] + "\t");
+        }
     }
-    public static void nhapThongtinsinhvien() {
-        Scanner sc = new Scanner(System.in);
-        String maSinhvien, hoTen, ngaySinh, lop, khoa, diaChi;
-        int tuoi;
-        boolean gt;
-        System.out.println("Nhập mã số sinh viên: ");
-        maSinhvien = sc.nextLine();
-        System.out.println("Nhập họ và tên sinh viên: ");
-        hoTen = sc.nextLine();
-        System.out.println("Nhập ngày sinh: ");
-        ngaySinh = sc.nextLine();
-        System.out.println("Nhập tên lớp: ");
-        lop = sc.nextLine();
-        System.out.println("Nhập tên khoa: ");
-        khoa = sc.nextLine();
-        System.out.println("Nhập địa chỉ: ");
-        diaChi = sc.nextLine();
-        System.out.println("Nhập tuổi: ");
-        tuoi = sc.nextInt();
-        System.out.println("Nhập giới tính ");
-        gt = sc.nextBoolean();
-    
-        
-    }
+}
         
     }
    
