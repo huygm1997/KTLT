@@ -1,4 +1,9 @@
-public static void demo3(int n) {
+package demo1;
+
+import java.util.Scanner;
+
+public class Demo {
+    public static void demo3(int n) {
         System.out.printf("\nDanh sách các phần tử n = %d là:\n", n); 
         for (int i = 1; i <= n; i++) { 
             if (i % 2 == 0) {
@@ -19,3 +24,4 @@ public static void demo3(int n) {
         sc.close();
     }
 }
+
