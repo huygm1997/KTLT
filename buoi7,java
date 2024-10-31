@@ -1,0 +1,59 @@
+package buoi7;
+import java.util.Scanner;
+public class Buoi7 {
+    public static void dv1() {
+        Scanner sc = new Scanner(System.in);
+        int n;
+        try {
+            System.out.println("nhập giá trị");
+            n = sc.nextInt();
+        } catch (Exception e) {
+            System.out.println("giá trị không hợp lệ, hãy hập lại");
+        }
+        //System.out.printf("giá trị vừa nhập là", +);
+    }
+
+    public static float nhapDiem() {
+        Scanner sc = new Scanner(System.in);
+        float diem = 0;
+        while (true)
+            try {
+                System.out.print("nhập điểm: ");
+                diem = Float.parseFloat(sc.nextLine());
+                if (diem >= 0 && diem <= 10)
+                    break;
+                else {
+                    System.out.println("điểm nhập nằm trong khoảng từ 0-10, hãy nhập lại");
+                }
+            } catch (Exception Exception) {
+                System.out.println("điểm nhập không hợp lệ giá trị nhập từ 0-10, hãy nhập lại ");
+            }
+        return diem;
+
+    }
+
+    public static int nhapTuoi() {
+        Scanner sc = new Scanner(System.in);
+        int tuoi = 0;
+        while (true)
+            try {
+                System.out.print("nhập tuổi: ");
+                tuoi = Integer.parseInt(sc.nextLine());
+                if (tuoi >= 0 && tuoi <= 150)
+                    break;
+                else {
+                    System.out.println("tuổi nhập nằm trong khoảng từ 0-150, hãy nhập lại");
+                }
+            } catch (Exception e) {
+                System.out.println("nhập không hợp lệ giá trị nhập từ 0-150, hãy nhập lại ");
+            }
+            return tuoi;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Điểm vừa nhập là: " + nhapDiem());
+        System.out.println("Tuổi vừa nhập là: " + nhapTuoi());
+    }
+}
+    
+
