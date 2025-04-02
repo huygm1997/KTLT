@@ -1,0 +1,319 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hearder-alibaba {
+    width: 1440px;
+    height: 86px;
+    border: 1px solid rgb(86, 85, 85);
+}
+
+.nvabar-alibaba {
+    width: 1440px;
+    height: 56px;
+    border: 1px solid rgb(86, 85, 85);
+}
+
+.section-main {
+    width: 1180px;
+    height: 400px;
+    border: 1px solid rgb(86, 85, 85);
+    margin-top: 20px;
+}
+
+.section-sale {
+    width: 1180px;
+    height: 240px;
+    border: 1px solid rgb(86, 85, 85);
+    margin-top: 30px;
+}
+
+.block-item-group {
+    width: 1180px;
+    height: 257px;
+    border: 1px solid rgb(86, 85, 85);
+    margin-top: 30px;
+}
+
+.section-inquiry {
+    width: 1180px;
+    height: 420px;
+    border: 1px solid rgb(86, 85, 85);
+    margin-top: 20px;
+}
+
+.section-recommend {
+    width: 1180px;
+    height: auto; /* Tự động điều chỉnh chiều cao */
+    border: 1px solid rgb(86, 85, 85);
+    margin-top: 20px;
+}
+
+.section-recommend-items {
+    display: flex;
+    flex-direction: row; /* Các phần tử con nằm ngang */
+    justify-content: space-between; /* Khoảng cách đều giữa các ô */
+    flex-wrap: wrap; /* Đảm bảo xuống dòng nếu không đủ chỗ */
+    gap: 10px; /* Khoảng cách giữa các ô */
+}
+
+.section-recommend-item {
+    width: 220px;
+    height: 310px;
+    border: 1px solid rgb(86, 85, 85);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa nội dung theo chiều ngang */
+}
+
+.section-recommend-item-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.section-recommend-item-price {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.section-recommend-detail {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.section-service {
+    width: 1180px;
+    height: 256px;
+    border: 1px solid rgb(86, 85, 85);
+    margin-top: 30px;
+}
+
+.section-country {
+    width: 1177px;
+    height: 138px;
+    border: 1px solid rgb(86, 85, 85);
+    margin-top: 20px;
+}
+
+.newsletter-alibaba {
+    width: 1440px;
+    height: 190px;
+    border: 1px solid rgb(86, 85, 85);
+    margin-top: 20px;
+}
+
+.footer-alibaba {
+    width: 1440px;
+    height: 324px;
+    border: 1px solid rgb(86, 85, 85);
+}
+
+.time {
+    display: flex;
+    width: 25%;
+    height: 200px;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgb(220, 220, 220);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.time-text {
+    margin-bottom: 10px;
+}
+
+.deals-text {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 5px;
+    display: flex;
+    margin-left: 20px;
+}
+
+.hygiene-text {
+    font-size: 18px;
+    color: #666;
+    margin-left: 20px;
+}
+
+
+.time-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.clock {
+    display: flex;
+    width: 150px; 
+    height: 50px;
+    background: #222;
+    color: black;
+    border-radius: 5px;
+    overflow: hidden;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.box {
+    width: 30px;
+    height: 40px;
+    background: #333;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.box:hover {
+    transform: scale(1.1);
+}
+
+.list-item {
+    width: 1180px; 
+    height: 200px; 
+    display: flex;
+    flex-direction: row;
+    align-items: stretch; /* Đảm bảo các item kéo dài theo chiều cao */
+    border: 1px solid rgb(86, 85, 85); /* Thêm viền để giống với section-main */
+    margin-top: 20px; /* Giữ khoảng cách đồng bộ */
+}
+
+
+.item {
+    border: 1px solid #eae8e8;
+    width: 175px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Để chứa item-gif */
+}
+
+.item-gif {
+    border: 1px solid #ff0202;
+    width: 30%;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #e89a9a;
+    padding: 5px 0;
+    position: absolute;
+    bottom: 5px; /* Căn sát đáy */
+    left: 50%;
+    transform: translateX(-50%); /* Đưa về chính giữa */
+}
+
+.box-container {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+.box-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-1 {
+    width: 140px;
+    height: 140px;
+}
+
+.box-2 {
+    width: 140px;
+    height: 140px;
+}
+
+.box-3 {
+    width: 140px;
+    height: 140px;
+}
+
+.box-4 {
+    width: 112.62px;
+    height: 128.18px;
+}
+
+.box-5 {
+    width: 140px;
+    height: 140px;
+}
+
+.box-1, .box-2, .box-3, .box-4, .box-5 {
+    border: none !important;
+    margin-top: -5px;
+}
+
+.left {
+    display: flex;
+    width: 25%;
+    height: 240px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgb(220, 220, 220);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.Home-text{
+    font-size: 22px;
+    font-weight: 30%;
+    margin-bottom: 150px;
+    margin-left: 25px;
+}
+
+.image-saler {
+    display: flex;
+    width: 25%;
+    height: 0px;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgb(220, 220, 220);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.saler-box1 {
+    position: absolute; 
+    left: 100%; 
+    top: 0; 
+    margin-left: 0px; 
+    width: 220px;
+    height: 120px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+}
